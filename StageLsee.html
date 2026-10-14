@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage LSEE</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header class="project-header">
+    <h1>Stage au LSEE de Béthune</h1>
+    <nav class="project-nav">
+      <ul>
+        <li><button data-section="about" class="active">À propos</button></li>
+        <li><button data-section="missions">Missions</button></li>
+        <li><button data-section="tools">Outils</button></li>
+        <li><button data-section="team">Encadrement</button></li>
+        <li><a href="index.html"><button>Home</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slider-container">
+
+    <section id="about" class="slide-active">
+      <img src="images/lsee.jpg" alt="Laboratoire LSEE" class="bg-img">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>À propos du stage</h2>
+        <p><strong>Poste :</strong> Ingénieur logiciel</p>
+        <p><strong>Lieu :</strong> LSEE (Laboratoire Systèmes Électrotechniques et Environnement), Université d'Artois, Béthune, Hauts-de-France, sur site</p>
+        <p><strong>Durée :</strong> 6 mois, de mars 2026 à août 2026</p>
+        <p>Le but de ce stage était de préparer un logiciel qui sera, à terme, open source et disponible sur un maximum de systèmes d'exploitation, à destination des doctorants et des chercheurs.</p>
+        <p>Ce projet s'appuie sur des travaux de thèses portant sur la tension inter-spires. Le code était régulièrement refait de zéro d'une thèse à l'autre : ma mission a été de repartir sur une base propre, solide et réutilisable.</p>
+      </div>
+    </section>
+
+    <section id="missions" class="slide-active">
+      <img src="images/lsee.jpg" alt="Simulation de circuits" class="bg-img">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Missions</h2>
+        <p>M'approprier les connaissances de génie électrique nécessaires pour comprendre correctement les contraintes du domaine.</p>
+        <p>Étudier les alternatives logicielles disponibles et choisir les plus pérennes et les plus faciles à prendre en main.</p>
+        <p>Poser les fondations du code et faire les choix structurels, aussi bien pour l'architecture que pour les outils et extensions utilisés.</p>
+        <p>Expliquer la programmation orientée objet aux personnes moins initiées.</p>
+        <p>Documenter le projet pour que la prochaine personne puisse le reprendre sans difficulté.</p>
+      </div>
+    </section>
+
+    <section id="tools" class="slide-active">
+      <img src="images/lsee.jpg" alt="Outils utilisés" class="bg-img">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Logiciels utilisés</h2>
+        <p><strong>Python 3.14.3</strong> : un langage accessible, qui facilite la modification du logiciel par les chercheurs.</p>
+        <p><strong>Ngspice 46</strong> : une version récente et stable du simulateur de circuits.</p>
+        <p><strong>PySpice</strong> : la bibliothèque Python qui fait le lien entre Ngspice et Python.</p>
+        <p><strong>Tkinter</strong> : pour l'interface graphique.</p>
+        <p>D'autres bibliothèques sont utilisées, mais de moindre importance : elles sont toutes listées dans le fichier <code>requirements.txt</code>.</p>
+      </div>
+    </section>
+
+    <section id="team" class="slide-active">
+      <img src="images/lsee.jpg" alt="Équipe du LSEE" class="bg-img">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Encadrement</h2>
+        <p>Stage encadré au sein du LSEE par Guillaume Parent et Stéphane Duchêne.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="cryptic.js"></script>
+</body>
+</html>
